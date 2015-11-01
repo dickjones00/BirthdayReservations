@@ -57,7 +57,28 @@
             this.tabNewReservation = new System.Windows.Forms.TabPage();
             this.dtpBirthdayDate = new System.Windows.Forms.DateTimePicker();
             this.grdOrder = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CakeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeSpanFromDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeSpanToDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.packageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.noteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cakeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CustomerId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.accontationDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.orderBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.grdCustomer = new System.Windows.Forms.DataGridView();
+            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.birthdayDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contactPersonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Note = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cboPackage = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.chkAccontation = new System.Windows.Forms.CheckBox();
@@ -71,7 +92,13 @@
             this.btnShowDeleteConfirm = new System.Windows.Forms.Button();
             this.btnShowAddGroup = new System.Windows.Forms.Button();
             this.grdCakes = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.weightDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cakesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cboResTimeTo = new System.Windows.Forms.ComboBox();
+            this.cboName = new System.Windows.Forms.ComboBox();
             this.cboResTimeFrom = new System.Windows.Forms.ComboBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtContactPerson = new System.Windows.Forms.TextBox();
@@ -97,23 +124,6 @@
             this.txtCakeWeight = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabReservations = new System.Windows.Forms.TabPage();
-            this.prgLoadTables = new System.Windows.Forms.ProgressBar();
-            this.label9 = new System.Windows.Forms.Label();
-            this.orderBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.weightDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cakesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.birthdayDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contactPersonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Note = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cboName = new System.Windows.Forms.ComboBox();
             this.grdFilteredOrders = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -121,30 +131,20 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Package = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CakeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.orderDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timeSpanFromDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timeSpanToDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.packageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.noteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cakeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CustomerId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accontationDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.prgLoadTables = new System.Windows.Forms.ProgressBar();
+            this.label9 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabTabs.SuspendLayout();
             this.tabNewReservation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdOrder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdCakes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cakesBindingSource)).BeginInit();
             this.grpDeleteCake.SuspendLayout();
             this.grpAddCake.SuspendLayout();
             this.tabReservations.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cakesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdFilteredOrders)).BeginInit();
             this.SuspendLayout();
             // 
@@ -350,6 +350,123 @@
             this.grdOrder.TabIndex = 109;
             this.grdOrder.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdOrder_CellDoubleClick);
             // 
+            // idDataGridViewTextBoxColumn2
+            // 
+            this.idDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.idDataGridViewTextBoxColumn2.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn2.FillWeight = 80F;
+            this.idDataGridViewTextBoxColumn2.HeaderText = "Id narudžbe";
+            this.idDataGridViewTextBoxColumn2.MinimumWidth = 80;
+            this.idDataGridViewTextBoxColumn2.Name = "idDataGridViewTextBoxColumn2";
+            this.idDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn2.Width = 80;
+            // 
+            // CakeName
+            // 
+            this.CakeName.DataPropertyName = "CakeName";
+            this.CakeName.HeaderText = "Ime torte";
+            this.CakeName.Name = "CakeName";
+            this.CakeName.ReadOnly = true;
+            // 
+            // CustomerName
+            // 
+            this.CustomerName.DataPropertyName = "CustomerName";
+            this.CustomerName.HeaderText = "Ime slavljenika";
+            this.CustomerName.Name = "CustomerName";
+            this.CustomerName.ReadOnly = true;
+            // 
+            // orderDateDataGridViewTextBoxColumn
+            // 
+            this.orderDateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.orderDateDataGridViewTextBoxColumn.DataPropertyName = "OrderDate";
+            this.orderDateDataGridViewTextBoxColumn.FillWeight = 120F;
+            this.orderDateDataGridViewTextBoxColumn.HeaderText = "Datum Narudžbe";
+            this.orderDateDataGridViewTextBoxColumn.MinimumWidth = 110;
+            this.orderDateDataGridViewTextBoxColumn.Name = "orderDateDataGridViewTextBoxColumn";
+            this.orderDateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.orderDateDataGridViewTextBoxColumn.Width = 110;
+            // 
+            // timeSpanFromDataGridViewTextBoxColumn
+            // 
+            this.timeSpanFromDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.timeSpanFromDataGridViewTextBoxColumn.DataPropertyName = "TimeSpanFrom";
+            this.timeSpanFromDataGridViewTextBoxColumn.FillWeight = 60F;
+            this.timeSpanFromDataGridViewTextBoxColumn.HeaderText = "Od (h)";
+            this.timeSpanFromDataGridViewTextBoxColumn.MinimumWidth = 60;
+            this.timeSpanFromDataGridViewTextBoxColumn.Name = "timeSpanFromDataGridViewTextBoxColumn";
+            this.timeSpanFromDataGridViewTextBoxColumn.ReadOnly = true;
+            this.timeSpanFromDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // timeSpanToDataGridViewTextBoxColumn
+            // 
+            this.timeSpanToDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.timeSpanToDataGridViewTextBoxColumn.DataPropertyName = "TimeSpanTo";
+            this.timeSpanToDataGridViewTextBoxColumn.FillWeight = 50F;
+            this.timeSpanToDataGridViewTextBoxColumn.HeaderText = "Do (h)";
+            this.timeSpanToDataGridViewTextBoxColumn.MinimumWidth = 60;
+            this.timeSpanToDataGridViewTextBoxColumn.Name = "timeSpanToDataGridViewTextBoxColumn";
+            this.timeSpanToDataGridViewTextBoxColumn.ReadOnly = true;
+            this.timeSpanToDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // packageDataGridViewTextBoxColumn
+            // 
+            this.packageDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.packageDataGridViewTextBoxColumn.DataPropertyName = "Package";
+            this.packageDataGridViewTextBoxColumn.FillWeight = 150F;
+            this.packageDataGridViewTextBoxColumn.HeaderText = "Paket";
+            this.packageDataGridViewTextBoxColumn.MinimumWidth = 130;
+            this.packageDataGridViewTextBoxColumn.Name = "packageDataGridViewTextBoxColumn";
+            this.packageDataGridViewTextBoxColumn.ReadOnly = true;
+            this.packageDataGridViewTextBoxColumn.Width = 130;
+            // 
+            // noteDataGridViewTextBoxColumn
+            // 
+            this.noteDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.noteDataGridViewTextBoxColumn.DataPropertyName = "Note";
+            this.noteDataGridViewTextBoxColumn.FillWeight = 200F;
+            this.noteDataGridViewTextBoxColumn.HeaderText = "Napomena";
+            this.noteDataGridViewTextBoxColumn.MinimumWidth = 200;
+            this.noteDataGridViewTextBoxColumn.Name = "noteDataGridViewTextBoxColumn";
+            this.noteDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cakeDataGridViewTextBoxColumn
+            // 
+            this.cakeDataGridViewTextBoxColumn.DataPropertyName = "Cake";
+            this.cakeDataGridViewTextBoxColumn.HeaderText = "Cake";
+            this.cakeDataGridViewTextBoxColumn.Name = "cakeDataGridViewTextBoxColumn";
+            this.cakeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cakeDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // CustomerId
+            // 
+            this.CustomerId.DataPropertyName = "CustomerId";
+            this.CustomerId.HeaderText = "CustomerId";
+            this.CustomerId.Name = "CustomerId";
+            this.CustomerId.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Customer";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Customer";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // accontationDataGridViewCheckBoxColumn
+            // 
+            this.accontationDataGridViewCheckBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.accontationDataGridViewCheckBoxColumn.DataPropertyName = "Accontation";
+            this.accontationDataGridViewCheckBoxColumn.FillWeight = 60F;
+            this.accontationDataGridViewCheckBoxColumn.HeaderText = "Akontacija";
+            this.accontationDataGridViewCheckBoxColumn.MinimumWidth = 60;
+            this.accontationDataGridViewCheckBoxColumn.Name = "accontationDataGridViewCheckBoxColumn";
+            this.accontationDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.accontationDataGridViewCheckBoxColumn.Width = 60;
+            // 
+            // orderBindingSource
+            // 
+            this.orderBindingSource.DataSource = typeof(DataLayer.Model.Order);
+            // 
             // grdCustomer
             // 
             this.grdCustomer.AllowUserToAddRows = false;
@@ -387,6 +504,78 @@
             this.grdCustomer.TabIndex = 108;
             this.grdCustomer.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdCustomer_CellContentClick);
             this.grdCustomer.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdCustomer_CellDoubleClick);
+            // 
+            // nameDataGridViewTextBoxColumn1
+            // 
+            this.nameDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nameDataGridViewTextBoxColumn1.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn1.FillWeight = 150F;
+            this.nameDataGridViewTextBoxColumn1.HeaderText = "Ime slavljenika";
+            this.nameDataGridViewTextBoxColumn1.MinimumWidth = 150;
+            this.nameDataGridViewTextBoxColumn1.Name = "nameDataGridViewTextBoxColumn1";
+            this.nameDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // ageDataGridViewTextBoxColumn
+            // 
+            this.ageDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.ageDataGridViewTextBoxColumn.DataPropertyName = "Age";
+            this.ageDataGridViewTextBoxColumn.FillWeight = 70F;
+            this.ageDataGridViewTextBoxColumn.HeaderText = "Dob";
+            this.ageDataGridViewTextBoxColumn.MinimumWidth = 70;
+            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
+            this.ageDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ageDataGridViewTextBoxColumn.Width = 70;
+            // 
+            // birthdayDateDataGridViewTextBoxColumn
+            // 
+            this.birthdayDateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.birthdayDateDataGridViewTextBoxColumn.DataPropertyName = "BirthdayDate";
+            this.birthdayDateDataGridViewTextBoxColumn.FillWeight = 120F;
+            this.birthdayDateDataGridViewTextBoxColumn.HeaderText = "Datum rođendana";
+            this.birthdayDateDataGridViewTextBoxColumn.MinimumWidth = 120;
+            this.birthdayDateDataGridViewTextBoxColumn.Name = "birthdayDateDataGridViewTextBoxColumn";
+            this.birthdayDateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.birthdayDateDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // contactPersonDataGridViewTextBoxColumn
+            // 
+            this.contactPersonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.contactPersonDataGridViewTextBoxColumn.DataPropertyName = "ContactPerson";
+            this.contactPersonDataGridViewTextBoxColumn.FillWeight = 200F;
+            this.contactPersonDataGridViewTextBoxColumn.HeaderText = "Kontakt osoba";
+            this.contactPersonDataGridViewTextBoxColumn.MinimumWidth = 200;
+            this.contactPersonDataGridViewTextBoxColumn.Name = "contactPersonDataGridViewTextBoxColumn";
+            this.contactPersonDataGridViewTextBoxColumn.ReadOnly = true;
+            this.contactPersonDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // phoneNumberDataGridViewTextBoxColumn
+            // 
+            this.phoneNumberDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.phoneNumberDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber";
+            this.phoneNumberDataGridViewTextBoxColumn.FillWeight = 120F;
+            this.phoneNumberDataGridViewTextBoxColumn.HeaderText = "Telefon";
+            this.phoneNumberDataGridViewTextBoxColumn.MinimumWidth = 120;
+            this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
+            this.phoneNumberDataGridViewTextBoxColumn.ReadOnly = true;
+            this.phoneNumberDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // Note
+            // 
+            this.Note.DataPropertyName = "Note";
+            this.Note.HeaderText = "Napomena";
+            this.Note.Name = "Note";
+            this.Note.ReadOnly = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // customerBindingSource
+            // 
+            this.customerBindingSource.DataSource = typeof(DataLayer.Model.Customer);
             // 
             // cboPackage
             // 
@@ -431,12 +620,15 @@
             // 
             // btnSaveReservation
             // 
+            this.btnSaveReservation.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSaveReservation.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.btnSaveReservation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaveReservation.Location = new System.Drawing.Point(530, 67);
             this.btnSaveReservation.Name = "btnSaveReservation";
             this.btnSaveReservation.Size = new System.Drawing.Size(84, 72);
             this.btnSaveReservation.TabIndex = 10;
             this.btnSaveReservation.Text = "Spremi rezervaciju";
-            this.btnSaveReservation.UseVisualStyleBackColor = true;
+            this.btnSaveReservation.UseVisualStyleBackColor = false;
             this.btnSaveReservation.Click += new System.EventHandler(this.btnSaveReservation_Click);
             // 
             // label6
@@ -451,6 +643,7 @@
             // btnRefresh
             // 
             this.btnRefresh.BackColor = System.Drawing.Color.NavajoWhite;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.Location = new System.Drawing.Point(10, 256);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(88, 23);
@@ -462,6 +655,7 @@
             // btnEditCake
             // 
             this.btnEditCake.BackColor = System.Drawing.Color.Yellow;
+            this.btnEditCake.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditCake.Location = new System.Drawing.Point(10, 198);
             this.btnEditCake.Name = "btnEditCake";
             this.btnEditCake.Size = new System.Drawing.Size(88, 23);
@@ -490,6 +684,7 @@
             // btnShowDeleteConfirm
             // 
             this.btnShowDeleteConfirm.BackColor = System.Drawing.Color.LightCoral;
+            this.btnShowDeleteConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShowDeleteConfirm.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnShowDeleteConfirm.Location = new System.Drawing.Point(10, 227);
             this.btnShowDeleteConfirm.Name = "btnShowDeleteConfirm";
@@ -502,6 +697,7 @@
             // btnShowAddGroup
             // 
             this.btnShowAddGroup.BackColor = System.Drawing.Color.YellowGreen;
+            this.btnShowAddGroup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShowAddGroup.Location = new System.Drawing.Point(10, 169);
             this.btnShowAddGroup.Name = "btnShowAddGroup";
             this.btnShowAddGroup.Size = new System.Drawing.Size(88, 23);
@@ -545,6 +741,52 @@
             this.grdCakes.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdCakes_RowEnter);
             this.grdCakes.RowLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdCakes_RowLeave);
             // 
+            // idDataGridViewTextBoxColumn1
+            // 
+            this.idDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn1.FillWeight = 50F;
+            this.idDataGridViewTextBoxColumn1.Frozen = true;
+            this.idDataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn1.MinimumWidth = 50;
+            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
+            this.idDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn1.Width = 50;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Naziv";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // weightDataGridViewTextBoxColumn1
+            // 
+            this.weightDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.weightDataGridViewTextBoxColumn1.DataPropertyName = "Weight";
+            this.weightDataGridViewTextBoxColumn1.FillWeight = 90F;
+            this.weightDataGridViewTextBoxColumn1.HeaderText = "Težina (g)";
+            this.weightDataGridViewTextBoxColumn1.MinimumWidth = 90;
+            this.weightDataGridViewTextBoxColumn1.Name = "weightDataGridViewTextBoxColumn1";
+            this.weightDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.weightDataGridViewTextBoxColumn1.Width = 90;
+            // 
+            // priceDataGridViewTextBoxColumn
+            // 
+            this.priceDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
+            this.priceDataGridViewTextBoxColumn.FillWeight = 90F;
+            this.priceDataGridViewTextBoxColumn.HeaderText = "Cijena (kn)";
+            this.priceDataGridViewTextBoxColumn.MinimumWidth = 90;
+            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
+            this.priceDataGridViewTextBoxColumn.ReadOnly = true;
+            this.priceDataGridViewTextBoxColumn.Width = 90;
+            // 
+            // cakesBindingSource
+            // 
+            this.cakesBindingSource.DataSource = typeof(DataLayer.Model.Cake);
+            // 
             // cboResTimeTo
             // 
             this.cboResTimeTo.FormattingEnabled = true;
@@ -565,6 +807,22 @@
             this.cboResTimeTo.Size = new System.Drawing.Size(49, 21);
             this.cboResTimeTo.TabIndex = 2;
             this.cboResTimeTo.Text = "11";
+            // 
+            // cboName
+            // 
+            this.cboName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboName.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.customerBindingSource, "Name", true));
+            this.cboName.DataSource = this.customerBindingSource;
+            this.cboName.DisplayMember = "Name";
+            this.cboName.FormattingEnabled = true;
+            this.cboName.Location = new System.Drawing.Point(104, 38);
+            this.cboName.Name = "cboName";
+            this.cboName.Size = new System.Drawing.Size(147, 21);
+            this.cboName.TabIndex = 1;
+            this.cboName.ValueMember = "Id";
+            this.cboName.SelectedValueChanged += new System.EventHandler(this.cboName_SelectedValueChanged);
+            this.cboName.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cboName_KeyUp);
             // 
             // cboResTimeFrom
             // 
@@ -819,165 +1077,6 @@
             this.tabReservations.Text = "Pregled";
             this.tabReservations.UseVisualStyleBackColor = true;
             // 
-            // prgLoadTables
-            // 
-            this.prgLoadTables.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.prgLoadTables.Location = new System.Drawing.Point(123, 28);
-            this.prgLoadTables.Name = "prgLoadTables";
-            this.prgLoadTables.Size = new System.Drawing.Size(903, 17);
-            this.prgLoadTables.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
-            this.prgLoadTables.TabIndex = 4;
-            this.prgLoadTables.Visible = false;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(2, 30);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(115, 13);
-            this.label9.TabIndex = 110;
-            this.label9.Text = "Učitavanje podataka...";
-            this.label9.Visible = false;
-            // 
-            // orderBindingSource
-            // 
-            this.orderBindingSource.DataSource = typeof(DataLayer.Model.Order);
-            // 
-            // customerBindingSource
-            // 
-            this.customerBindingSource.DataSource = typeof(DataLayer.Model.Customer);
-            // 
-            // idDataGridViewTextBoxColumn1
-            // 
-            this.idDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn1.FillWeight = 50F;
-            this.idDataGridViewTextBoxColumn1.Frozen = true;
-            this.idDataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn1.MinimumWidth = 50;
-            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
-            this.idDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.idDataGridViewTextBoxColumn1.Width = 50;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Naziv";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // weightDataGridViewTextBoxColumn1
-            // 
-            this.weightDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.weightDataGridViewTextBoxColumn1.DataPropertyName = "Weight";
-            this.weightDataGridViewTextBoxColumn1.FillWeight = 90F;
-            this.weightDataGridViewTextBoxColumn1.HeaderText = "Težina (g)";
-            this.weightDataGridViewTextBoxColumn1.MinimumWidth = 90;
-            this.weightDataGridViewTextBoxColumn1.Name = "weightDataGridViewTextBoxColumn1";
-            this.weightDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.weightDataGridViewTextBoxColumn1.Width = 90;
-            // 
-            // priceDataGridViewTextBoxColumn
-            // 
-            this.priceDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
-            this.priceDataGridViewTextBoxColumn.FillWeight = 90F;
-            this.priceDataGridViewTextBoxColumn.HeaderText = "Cijena (kn)";
-            this.priceDataGridViewTextBoxColumn.MinimumWidth = 90;
-            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
-            this.priceDataGridViewTextBoxColumn.ReadOnly = true;
-            this.priceDataGridViewTextBoxColumn.Width = 90;
-            // 
-            // cakesBindingSource
-            // 
-            this.cakesBindingSource.DataSource = typeof(DataLayer.Model.Cake);
-            // 
-            // nameDataGridViewTextBoxColumn1
-            // 
-            this.nameDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.nameDataGridViewTextBoxColumn1.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn1.FillWeight = 150F;
-            this.nameDataGridViewTextBoxColumn1.HeaderText = "Ime slavljenika";
-            this.nameDataGridViewTextBoxColumn1.MinimumWidth = 150;
-            this.nameDataGridViewTextBoxColumn1.Name = "nameDataGridViewTextBoxColumn1";
-            this.nameDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // ageDataGridViewTextBoxColumn
-            // 
-            this.ageDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.ageDataGridViewTextBoxColumn.DataPropertyName = "Age";
-            this.ageDataGridViewTextBoxColumn.FillWeight = 70F;
-            this.ageDataGridViewTextBoxColumn.HeaderText = "Dob";
-            this.ageDataGridViewTextBoxColumn.MinimumWidth = 70;
-            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
-            this.ageDataGridViewTextBoxColumn.ReadOnly = true;
-            this.ageDataGridViewTextBoxColumn.Width = 70;
-            // 
-            // birthdayDateDataGridViewTextBoxColumn
-            // 
-            this.birthdayDateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.birthdayDateDataGridViewTextBoxColumn.DataPropertyName = "BirthdayDate";
-            this.birthdayDateDataGridViewTextBoxColumn.FillWeight = 120F;
-            this.birthdayDateDataGridViewTextBoxColumn.HeaderText = "Datum rođendana";
-            this.birthdayDateDataGridViewTextBoxColumn.MinimumWidth = 120;
-            this.birthdayDateDataGridViewTextBoxColumn.Name = "birthdayDateDataGridViewTextBoxColumn";
-            this.birthdayDateDataGridViewTextBoxColumn.ReadOnly = true;
-            this.birthdayDateDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // contactPersonDataGridViewTextBoxColumn
-            // 
-            this.contactPersonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.contactPersonDataGridViewTextBoxColumn.DataPropertyName = "ContactPerson";
-            this.contactPersonDataGridViewTextBoxColumn.FillWeight = 200F;
-            this.contactPersonDataGridViewTextBoxColumn.HeaderText = "Kontakt osoba";
-            this.contactPersonDataGridViewTextBoxColumn.MinimumWidth = 200;
-            this.contactPersonDataGridViewTextBoxColumn.Name = "contactPersonDataGridViewTextBoxColumn";
-            this.contactPersonDataGridViewTextBoxColumn.ReadOnly = true;
-            this.contactPersonDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // phoneNumberDataGridViewTextBoxColumn
-            // 
-            this.phoneNumberDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.phoneNumberDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber";
-            this.phoneNumberDataGridViewTextBoxColumn.FillWeight = 120F;
-            this.phoneNumberDataGridViewTextBoxColumn.HeaderText = "Telefon";
-            this.phoneNumberDataGridViewTextBoxColumn.MinimumWidth = 120;
-            this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
-            this.phoneNumberDataGridViewTextBoxColumn.ReadOnly = true;
-            this.phoneNumberDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // Note
-            // 
-            this.Note.DataPropertyName = "Note";
-            this.Note.HeaderText = "Napomena";
-            this.Note.Name = "Note";
-            this.Note.ReadOnly = true;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cboName
-            // 
-            this.cboName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cboName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboName.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.customerBindingSource, "Name", true));
-            this.cboName.DataSource = this.customerBindingSource;
-            this.cboName.DisplayMember = "Name";
-            this.cboName.FormattingEnabled = true;
-            this.cboName.Location = new System.Drawing.Point(104, 38);
-            this.cboName.Name = "cboName";
-            this.cboName.Size = new System.Drawing.Size(147, 21);
-            this.cboName.TabIndex = 1;
-            this.cboName.ValueMember = "Id";
-            this.cboName.SelectedValueChanged += new System.EventHandler(this.cboName_SelectedValueChanged);
-            this.cboName.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cboName_KeyUp);
-            // 
             // grdFilteredOrders
             // 
             this.grdFilteredOrders.AllowUserToAddRows = false;
@@ -1054,118 +1153,26 @@
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // idDataGridViewTextBoxColumn2
+            // prgLoadTables
             // 
-            this.idDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.idDataGridViewTextBoxColumn2.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn2.FillWeight = 80F;
-            this.idDataGridViewTextBoxColumn2.HeaderText = "Id narudžbe";
-            this.idDataGridViewTextBoxColumn2.MinimumWidth = 80;
-            this.idDataGridViewTextBoxColumn2.Name = "idDataGridViewTextBoxColumn2";
-            this.idDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.idDataGridViewTextBoxColumn2.Width = 80;
+            this.prgLoadTables.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.prgLoadTables.Location = new System.Drawing.Point(123, 28);
+            this.prgLoadTables.Name = "prgLoadTables";
+            this.prgLoadTables.Size = new System.Drawing.Size(903, 17);
+            this.prgLoadTables.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.prgLoadTables.TabIndex = 4;
+            this.prgLoadTables.Visible = false;
             // 
-            // CakeName
+            // label9
             // 
-            this.CakeName.DataPropertyName = "CakeName";
-            this.CakeName.HeaderText = "Ime torte";
-            this.CakeName.Name = "CakeName";
-            this.CakeName.ReadOnly = true;
-            // 
-            // CustomerName
-            // 
-            this.CustomerName.DataPropertyName = "CustomerName";
-            this.CustomerName.HeaderText = "Ime slavljenika";
-            this.CustomerName.Name = "CustomerName";
-            this.CustomerName.ReadOnly = true;
-            // 
-            // orderDateDataGridViewTextBoxColumn
-            // 
-            this.orderDateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.orderDateDataGridViewTextBoxColumn.DataPropertyName = "OrderDate";
-            this.orderDateDataGridViewTextBoxColumn.FillWeight = 120F;
-            this.orderDateDataGridViewTextBoxColumn.HeaderText = "Datum Narudžbe";
-            this.orderDateDataGridViewTextBoxColumn.MinimumWidth = 110;
-            this.orderDateDataGridViewTextBoxColumn.Name = "orderDateDataGridViewTextBoxColumn";
-            this.orderDateDataGridViewTextBoxColumn.ReadOnly = true;
-            this.orderDateDataGridViewTextBoxColumn.Width = 110;
-            // 
-            // timeSpanFromDataGridViewTextBoxColumn
-            // 
-            this.timeSpanFromDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.timeSpanFromDataGridViewTextBoxColumn.DataPropertyName = "TimeSpanFrom";
-            this.timeSpanFromDataGridViewTextBoxColumn.FillWeight = 60F;
-            this.timeSpanFromDataGridViewTextBoxColumn.HeaderText = "Od (h)";
-            this.timeSpanFromDataGridViewTextBoxColumn.MinimumWidth = 60;
-            this.timeSpanFromDataGridViewTextBoxColumn.Name = "timeSpanFromDataGridViewTextBoxColumn";
-            this.timeSpanFromDataGridViewTextBoxColumn.ReadOnly = true;
-            this.timeSpanFromDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // timeSpanToDataGridViewTextBoxColumn
-            // 
-            this.timeSpanToDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.timeSpanToDataGridViewTextBoxColumn.DataPropertyName = "TimeSpanTo";
-            this.timeSpanToDataGridViewTextBoxColumn.FillWeight = 50F;
-            this.timeSpanToDataGridViewTextBoxColumn.HeaderText = "Do (h)";
-            this.timeSpanToDataGridViewTextBoxColumn.MinimumWidth = 60;
-            this.timeSpanToDataGridViewTextBoxColumn.Name = "timeSpanToDataGridViewTextBoxColumn";
-            this.timeSpanToDataGridViewTextBoxColumn.ReadOnly = true;
-            this.timeSpanToDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // packageDataGridViewTextBoxColumn
-            // 
-            this.packageDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.packageDataGridViewTextBoxColumn.DataPropertyName = "Package";
-            this.packageDataGridViewTextBoxColumn.FillWeight = 150F;
-            this.packageDataGridViewTextBoxColumn.HeaderText = "Paket";
-            this.packageDataGridViewTextBoxColumn.MinimumWidth = 130;
-            this.packageDataGridViewTextBoxColumn.Name = "packageDataGridViewTextBoxColumn";
-            this.packageDataGridViewTextBoxColumn.ReadOnly = true;
-            this.packageDataGridViewTextBoxColumn.Width = 130;
-            // 
-            // noteDataGridViewTextBoxColumn
-            // 
-            this.noteDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.noteDataGridViewTextBoxColumn.DataPropertyName = "Note";
-            this.noteDataGridViewTextBoxColumn.FillWeight = 200F;
-            this.noteDataGridViewTextBoxColumn.HeaderText = "Napomena";
-            this.noteDataGridViewTextBoxColumn.MinimumWidth = 200;
-            this.noteDataGridViewTextBoxColumn.Name = "noteDataGridViewTextBoxColumn";
-            this.noteDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cakeDataGridViewTextBoxColumn
-            // 
-            this.cakeDataGridViewTextBoxColumn.DataPropertyName = "Cake";
-            this.cakeDataGridViewTextBoxColumn.HeaderText = "Cake";
-            this.cakeDataGridViewTextBoxColumn.Name = "cakeDataGridViewTextBoxColumn";
-            this.cakeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cakeDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // CustomerId
-            // 
-            this.CustomerId.DataPropertyName = "CustomerId";
-            this.CustomerId.HeaderText = "CustomerId";
-            this.CustomerId.Name = "CustomerId";
-            this.CustomerId.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Customer";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Customer";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Visible = false;
-            // 
-            // accontationDataGridViewCheckBoxColumn
-            // 
-            this.accontationDataGridViewCheckBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.accontationDataGridViewCheckBoxColumn.DataPropertyName = "Accontation";
-            this.accontationDataGridViewCheckBoxColumn.FillWeight = 60F;
-            this.accontationDataGridViewCheckBoxColumn.HeaderText = "Akontacija";
-            this.accontationDataGridViewCheckBoxColumn.MinimumWidth = 60;
-            this.accontationDataGridViewCheckBoxColumn.Name = "accontationDataGridViewCheckBoxColumn";
-            this.accontationDataGridViewCheckBoxColumn.ReadOnly = true;
-            this.accontationDataGridViewCheckBoxColumn.Width = 60;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(2, 30);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(115, 13);
+            this.label9.TabIndex = 110;
+            this.label9.Text = "Učitavanje podataka...";
+            this.label9.Visible = false;
             // 
             // fmReservations
             // 
@@ -1189,16 +1196,16 @@
             this.tabNewReservation.ResumeLayout(false);
             this.tabNewReservation.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdOrder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdCakes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cakesBindingSource)).EndInit();
             this.grpDeleteCake.ResumeLayout(false);
             this.grpDeleteCake.PerformLayout();
             this.grpAddCake.ResumeLayout(false);
             this.grpAddCake.PerformLayout();
             this.tabReservations.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cakesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdFilteredOrders)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

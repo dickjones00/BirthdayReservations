@@ -327,6 +327,18 @@ namespace Rezervacije
                         return;
                     }
                 }
+                else
+                {
+                    await CustomerDB.Insert(customer);
+                    CustomerDB.Context.SaveChanges();
+                    FillOrderObject(cake);
+
+                    await OrderDB.Insert(order);
+                    OrderDB.Context.SaveChanges();
+
+                    await OrderSelect();
+                    await CustomerSelect();
+                }
             }
             catch (Exception ex)
             {
@@ -351,7 +363,7 @@ namespace Rezervacije
         private void FillCustomerObject()
         {
             customer = new Customer();
-            customer.Name = cboName.DisplayMember;
+            customer.Name = cboName.Text;
             customer.Age = DateTime.Now.Year - dtpBirthdayDate.Value.Year;
             customer.BirthdayDate = DateTime.Parse(dtpBirthdayDate.Text);
             customer.ContactPerson = txtContactPerson.Text;
@@ -466,14 +478,21 @@ namespace Rezervacije
         {
             if (e.KeyCode == Keys.Enter)
             {
-                var guidCustomer = new Guid(cboName.SelectedValue.ToString());
-                if (CheckIfCustomerIdExist(guidCustomer))
+                try
                 {
-                    GetCustomerByGuid(guidCustomer);
-                    
-                    txtContactPerson.Text = customer.ContactPerson;
-                    txtPhone.Text = customer.PhoneNumber;
-                    dtpBirthdayDate.Value = customer.BirthdayDate;
+                    var guidCustomer = new Guid(cboName.SelectedValue.ToString());
+                    if (CheckIfCustomerIdExist(guidCustomer))
+                    {
+                        GetCustomerByGuid(guidCustomer);
+
+                        txtContactPerson.Text = customer.ContactPerson;
+                        txtPhone.Text = customer.PhoneNumber;
+                        dtpBirthdayDate.Value = customer.BirthdayDate;
+                    }
+                }
+                catch
+                {
+                    return;
                 }
             }
         }
