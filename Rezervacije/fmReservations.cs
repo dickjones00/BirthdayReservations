@@ -27,6 +27,7 @@ namespace Rezervacije
         private Customer customer = new Customer();
         private Order order = new Order();
 
+        private Guid rowClicked;
         public fmReservations()
         {
             InitializeComponent();
@@ -45,8 +46,18 @@ namespace Rezervacije
             await RefreshTables();
             label9.Visible = false;
             prgLoadTables.Visible = false;
-            cboName.DataSource = customerBindingSource.DataSource;
+            FillNameComboBox();
 
+        }
+
+        private void FillNameComboBox()
+        {
+            //cboName.DataSource = null;
+            
+            cboName.DataSource = customerBindingSource.DataSource;
+            
+            cboName.Update();
+            cboName.Refresh();
         }
 
         private async Task RefreshTables()
@@ -284,13 +295,6 @@ namespace Rezervacije
         {
             try
             {
-                //grdCakes.Rows.Clear();
-                //grdCakes.Refresh();
-                //grdCustomer.Rows.Clear();
-                //grdCustomer.Refresh();
-                //grdOrder.Rows.Clear();
-                //grdOrder.Refresh();
-
                 await RefreshTables();
 
             }
@@ -319,8 +323,7 @@ namespace Rezervacije
                         await OrderDB.Insert(order);
                         OrderDB.Context.SaveChanges();
 
-                        await OrderSelect();
-                        await CustomerSelect();
+                        await RefreshTables();
                     }
                     else
                     {
@@ -454,7 +457,6 @@ namespace Rezervacije
         private Guid GetGuidFromCustomer()
         {
             int rowindex = grdCustomer.CurrentRow.Index;
-            //DataGridViewRow row = new DataGridViewRow();
             int cell = GetColumnIndexByName(grdCustomer, "Id");
 
             Guid id = new Guid(grdCustomer.Rows[rowindex].Cells[cell].Value.ToString());
@@ -499,10 +501,7 @@ namespace Rezervacije
 
         private async void grdOrder_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            tabTabs.SelectedIndex = 1;
-            int rowindex = grdOrder.CurrentRow.Index;
-            int cell = GetColumnIndexByName(grdOrder, "CustomerId");
-            Guid id = new Guid(grdOrder.Rows[rowindex].Cells[cell].Value.ToString());
+            Guid id = GetGuidFromSelectedRow(grdOrder, "Id slavljenika");
 
             List<Order> orders = await OrderDB.GetList();
             orderBindingSource.DataSource = grdOrder.DataSource;
@@ -511,6 +510,14 @@ namespace Rezervacije
             grdFilteredOrders.DataSource = filteredByCustomerId;
             grdFilteredOrders.Update();
             grdFilteredOrders.Refresh();
+        }
+
+        private Guid GetGuidFromSelectedRow(DataGridView grid, string nameOfIdColumn)
+        {
+            int rowindex = grid.CurrentRow.Index;
+            int cell = GetColumnIndexByName(grid, nameOfIdColumn);
+            Guid id = new Guid(grid.Rows[rowindex].Cells[cell].Value.ToString());
+            return id;
         }
 
         private void cboName_SelectedValueChanged(object sender, EventArgs e)
@@ -527,6 +534,80 @@ namespace Rezervacije
                     dtpBirthdayDate.Value = customer.BirthdayDate;
                 }
             }
+        }
+        private void grdOrder_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            ShowContextMenuOnGrid(sender, e, grdOrder);
+        }
+
+        private void grdCustomer_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            ShowContextMenuOnGrid(sender, e, grdCustomer);
+        }
+
+        private void ShowContextMenuOnGrid(object sender, DataGridViewCellMouseEventArgs e, DataGridView grid)
+        {
+            // Ignore if a column or row header is clicked
+            if (e.RowIndex != -1 && e.ColumnIndex != -1)
+            {
+                if (e.Button == MouseButtons.Right)
+                {
+                    DataGridViewCell clickedCell = (sender as DataGridView).Rows[e.RowIndex].Cells[e.ColumnIndex];
+
+                    // Here you can do whatever you want with the cell
+                    grid.CurrentCell = clickedCell;  // Select the clicked cell, for instance
+                    grid.CurrentRow.Selected = true;
+
+                    // Get mouse position relative to the vehicles grid
+                    var relativeMousePosition = grdOrder.PointToClient(Cursor.Position);
+
+                    // Show the context menu
+                    this.mnuGridOrders.Show(grdOrder, relativeMousePosition);
+                }
+            }
+        }
+
+        private async void smiDelete_Click(object sender, EventArgs e)
+        {
+            DeleteFromGridById();
+            await RefreshTables();
+            FillNameComboBox();
+        }
+
+        private void DeleteFromGridById()
+        {
+            Order orderToRemove;
+            Customer customerToRemove;
+            if (grdOrder.Focused)
+            {
+                orderToRemove = OrderDB.Context.Order.SingleOrDefault(x => x.Id == rowClicked); //returns a single item.
+
+                if (orderToRemove != null)
+                {
+                    OrderDB.Context.Order.Remove(orderToRemove);
+                    OrderDB.Context.SaveChanges();
+                }
+            }
+            else if (grdCustomer.Focused)
+            {
+                customerToRemove = CustomerDB.Context.Customer.SingleOrDefault(x => x.Id == rowClicked); //returns a single item.
+
+                if (customerToRemove != null)
+                {
+                    CustomerDB.Context.Customer.Remove(customerToRemove);
+                    CustomerDB.Context.SaveChanges();
+                }
+            }
+        }
+
+        private void grdOrder_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            rowClicked = GetGuidFromSelectedRow(grdOrder, "Id narudžbe");
+        }
+
+        private void grdCustomer_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            rowClicked = GetGuidFromSelectedRow(grdCustomer, "Id");
         }
     }
 }
